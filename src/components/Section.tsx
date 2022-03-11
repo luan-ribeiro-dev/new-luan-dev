@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Section: React.FC = (props) => {
+const Section: React.FC<{id: string}> = ({id, children}) => {
   return (
-    <div className="section">
-        {props.children}
-    </div>
+    <section className="section">
+        {children}
+    </section>
   );
 };
 

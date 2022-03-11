@@ -7,76 +7,15 @@
   height: 100vh;
   padding: 5vh 100px;
   
-  @include breakpoint('tablet') {
-    height: 100vh;
-    padding: 5vh 10vw;
+}
+
+@include breakpoint('tablet') {
+  .section{
+    padding: 30px
   }
 }
-
-.green-circle {
-  $size: 45rem;
-
-  display: block;
-  background-color: #64ffda;
-  border-radius: 50%;
-  width: calc(70% * 1);
-  height: calc(128% * 0.9);
-  max-width: 800px;
-  max-height: 700px;
-  margin: 0;
-  position: absolute;
-  right: calc(#{$size} / 2 * -0.5);
-  bottom: calc(#{$size} / 2 * -0.5);
-  z-index: 1;
-}
-
-.center-div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 100%;
-  flex-direction: column;
-}
-
-.round-white-icon {
-  background-color: #FFF;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  text-decoration: none;
-  border-radius: 100%;
-  font-size: 1.2em;
-  color: $primary_color;
-  transition: 0.6s;
-
-  &:hover{
-    color: $primary_color;
-    transform: translateY(-5px);
+@include breakpoint('mobile') {
+  .section{
+    padding: 15px
   }
-}
-
-.white-balls-pattern{
-  background-image:url("../../public/assets/img/white-ball.png");
-  background-repeat:repeat;
-  background-size: 10px;
-}
-
-.green-text {
-  color: $secondary_color;
-}
-
-.green-square {
-  background-color: $secondary_color;
-  width: 0.2em;
-  height: 0.2em;
-  margin: 0;
-  display: inline-block;
-}
-
-.overlay-row {
-  position: relative;
-  z-index: 1;
 }
