@@ -1,0 +1,45 @@
+html {
+  overflow-x: hidden;
+  overflow-y: overlay;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $white
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: darken($white, 10);
+  }
+
+  * {
+    font-family: "Gotham";
+  }
+}
+
+a{
+  text-decoration: none;
+  color: $secondary_color;
+  transition: .3s;
+
+  &:hover{
+    color: darken($secondary_color, 30);
+  }
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+
+  & > div{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 5px 0;
+  }
+}
