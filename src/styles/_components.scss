@@ -30,22 +30,6 @@
   z-index: 1;
 }
 
-.info-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
-  max-width: 450px;
-  height: 500px;
-}
-
-.info-paragraph {
-  font-size: 1.2em;
-  line-height: 20px;
-  font-weight: lighter;
-}
-
 .center-div {
   display: flex;
   justify-content: center;
@@ -92,53 +76,7 @@
   display: inline-block;
 }
 
-.header-text {
-  font-size: calc(3.5rem + 1.3vw);
-  line-height: 0.9em;
-  font-family: "Gotham Black";
-}
-
 .overlay-row {
   position: relative;
   z-index: 1;
-}
-
-#self-image {
-  width: 100%;
-  border-radius: 10px;
-  max-width: 450px;
-  z-index: 1;
-  transition: .6s;
-}
-
-#pattern-ball-1, #pattern-ball-2{
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  transition: .6s;
-}
-
-#pattern-ball-1{
-  top: 100px;
-  left: -20px;
-  z-index: 1;
-}
-
-#pattern-ball-2{
-  width: 150px;
-  height: 150px;
-  bottom: -10px;
-  right: -40px;
-}
-
-#self-div:hover{
-  #pattern-ball-1{
-    transform: translateY(-60px)
-  }
-  #pattern-ball-2{
-    transform: translate(-100px, -20px)
-  }
-  #self-image{
-    transform: translate(-20px, -20px)
-  }
 }
