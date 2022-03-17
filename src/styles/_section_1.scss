@@ -31,17 +31,16 @@
   }
 }
 
-#section-1-info-div {
+.section-info-div {
   display: flex;
   justify-content: center;
-  align-items: center;
   align-content: center;
   flex-direction: column;
   max-width: 450px;
   height: 300px;
 
   h1 {
-    font-size: calc(3.5rem + 1.3vw);
+    font-size: calc(3rem + 1.3vw);
     line-height: 0.9em;
     font-family: "Gotham Black";
   }
@@ -97,7 +96,7 @@
   }
 }
 
-#section-1-green-circle {
+#section-green-circle {
   $size: 45rem;
 
   display: block;
@@ -114,7 +113,7 @@
   z-index: 1;
 }
 
-.section-1-side-div {
+.section-side-div {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -125,7 +124,7 @@
 
 // Responsive
 @include breakpoint("tablet") {
-  #section-1-info-div {
+  .section-info-div {
     h1 {
       font-size: 2.8rem
     }
@@ -145,12 +144,12 @@
     top: 250px;
   }
 
-  #section-1-green-circle {
+  #section-green-circle {
     width: 500px;
     height: 500px;
   }
 
-  .section-1-side-div {
+  .section-side-div {
     justify-content: flex-start;
     margin-top: 100px;
   }
@@ -163,7 +162,7 @@
 }
 
 @include breakpoint("mobile") {
-  #contact-info #section-1-rights {
+  #contact-info #section-rights {
     display: none;
   }
 
@@ -175,12 +174,12 @@
     }
   }
 
-  #section-1-info-div {
+  .section-info-div {
     justify-content: flex-start;
     height: auto;
   }
 
-  .section-1-side-div {
+  .section-side-div {
     margin-top: 0;
     height: auto;
   }
@@ -190,7 +189,7 @@
     margin: auto;
   }
 
-  #section-1-green-circle {
+  #section-green-circle {
     width: 400px;
     height: 400px;
   }
