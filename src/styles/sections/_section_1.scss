@@ -1,3 +1,40 @@
+#home {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 100vw #0a192fF0;
+
+  .personal-info-div {
+    margin-top: 50px;
+    text-align: start;
+
+    .info {
+      margin-top: 10px;
+      position: relative;
+
+      a {
+        color: #FFF;
+        
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      .bold-text {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $secondary_color;
+      }
+
+      .info-text {
+        font-weight: normal;
+        position: absolute;
+        left: 0;
+        padding-left: 200px;
+      }
+    }
+  }
+}
 
 #contact-info {
   display: flex;
@@ -14,6 +51,7 @@
 #top-bar {
   display: flex;
   justify-content: space-between;
+  height: 40px;
 
   .fas, #logo {
     font-size: 35px;
@@ -28,27 +66,6 @@
 
   #menu-bar-button {
     cursor: pointer;
-  }
-}
-
-.section-info-div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  max-width: 450px;
-  height: 300px;
-
-  h1 {
-    font-size: calc(3rem + 1.3vw);
-    line-height: 0.9em;
-    font-family: "Gotham Black";
-  }
-
-  p {
-    font-size: 1.2em;
-    line-height: 20px;
-    font-weight: lighter;
   }
 }
 
@@ -113,27 +130,14 @@
   z-index: 1;
 }
 
-.section-side-div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 100%;
-  flex-direction: column;
+// Responsive
+@include breakpoint("1060px") {
+  #home .personal-info-div .info{
+    margin-top: 30px;
+  }
 }
 
-
-// Responsive
 @include breakpoint("tablet") {
-  .section-info-div {
-    h1 {
-      font-size: 2.8rem
-    }
-
-    p {
-      font-size: 1rem
-    }
-  }
-
   #self-div:hover #pattern-ball-1 {
     transform: translateY(80px);
   }
@@ -147,11 +151,6 @@
   #section-green-circle {
     width: 500px;
     height: 500px;
-  }
-
-  .section-side-div {
-    justify-content: flex-start;
-    margin-top: 100px;
   }
 
   #top-bar {
@@ -172,16 +171,6 @@
     .fas, #logo{
       font-size: 20px;
     }
-  }
-
-  .section-info-div {
-    justify-content: flex-start;
-    height: auto;
-  }
-
-  .section-side-div {
-    margin-top: 0;
-    height: auto;
   }
 
   #self-image {

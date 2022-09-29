@@ -1,0 +1,55 @@
+.section {
+  width: 100%;
+  background-color: $primary_color;
+  color: #FFF;
+  position: relative;
+  height: 100vh;
+  padding: 5vh 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-side-div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+// Responsive
+@include breakpoint("tablet") {
+  .section{
+    padding: 30px
+  }
+  
+  .section-description {
+    h1 {
+      font-size: 2.8rem
+    }
+
+    p {
+      font-size: 1rem
+    }
+  }
+}
+
+@include breakpoint("mobile") {
+  .section{
+    padding: 15px
+  }
+  
+  .section-side-div {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .section-description {
+    justify-content: flex-start;
+    height: auto;
+  }
+}
+
+@import './_section_1';
+@import './_section_2';

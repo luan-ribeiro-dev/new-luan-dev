@@ -1,21 +1,39 @@
-.section {
+.section-description {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 300px;
   width: 100%;
-  background-color: $primary_color;
-  color: #FFF;
-  border-bottom: 1px solid #000;
-  position: relative;
-  height: 100vh;
-  padding: 5vh 100px;
-  
-}
 
-@include breakpoint('tablet') {
-  .section{
-    padding: 30px
+  h1 {
+    font-size: calc(2.5rem + 1.3vw);
+    line-height: 0.9em;
+    font-family: "Gotham Black";
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 20px;
+    font-weight: lighter;
   }
 }
-@include breakpoint('mobile') {
-  .section{
-    padding: 15px
+
+@include breakpoint("tablet") {
+  .section-description {
+    h1 {
+      font-size: 2.8rem
+    }
+
+    p {
+      font-size: 1rem
+    }
+  }
+}
+
+@include breakpoint("mobile") {
+  .section-description {
+    justify-content: flex-start;
+    height: auto;
   }
 }
