@@ -25,6 +25,7 @@ html {
 
 #root{
   background-color: $primary_color;
+  overflow-x: hidden;
 }
 
 #app{

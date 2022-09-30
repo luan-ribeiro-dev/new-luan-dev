@@ -28,9 +28,9 @@ const AboutMe: React.FC = () => {
           </div>
         </div>
         <div className="col-12 col-sm-6 section-side-div position-relative" id="self-div">
-          <img id="self-image" src="/assets/img/self2.jpg" alt="Me" />
+          {/* <img id="self-image" src="/assets/img/self2.jpg" alt="Me" />
           <figure className="white-balls-pattern" id="pattern-ball-1"></figure>
-          <figure className="white-balls-pattern" id="pattern-ball-2"></figure>
+          <figure className="white-balls-pattern" id="pattern-ball-2"></figure> */}
         </div>
       </div>
     </Section>
