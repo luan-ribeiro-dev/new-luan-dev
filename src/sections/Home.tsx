@@ -19,7 +19,7 @@ const Home: React.FC = () => {
                 title="Luan Ribeiro"
               >
                 <p>
-                  Fullstack web developer, Computer Technician.
+                  Fullstack Web Developer, Computer Technician.
                 </p>
                 <p>
                   <div id="personal-info-div">
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
                     </div>
                     <div className="info">
                       <span className="bold-text">WORKING HOURS:&nbsp;</span>
-                      <span className="info-text">Fulltime - 08:00 am - 05:00 pm (EDT)</span>
+                      <span className="info-text">Fulltime - 08:00 am - 05:00 pm (EST/EDT)</span>
                     </div>
                   </div>
                 </p>

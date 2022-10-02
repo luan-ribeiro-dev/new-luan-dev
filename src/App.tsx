@@ -3,6 +3,7 @@ import "./styles/styles.scss";
 import Section from "./components/Section";
 import LoadScreen from "./components/LoadScreen";
 import {AboutMe, Home} from "./sections"
+import Portfolio from "./sections/Portfolio";
 
 interface IAppState {
   sections: string[],
@@ -88,9 +89,8 @@ export default class App extends React.Component<{}, IAppState> {
         
         <AboutMe />
         
-        <Section id="my-work">
-          <h1 style={{ position: "absolute", left: 0, top: 0 }}>my-work</h1>
-        </Section>
+        <Portfolio />
+        
         <Section id="education">
           <h1 style={{ position: "absolute", left: 0, top: 0 }}>education</h1>
         </Section>

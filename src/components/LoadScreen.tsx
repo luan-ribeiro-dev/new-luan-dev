@@ -24,7 +24,7 @@ const LoadScreen: React.FC<{callback: Function}> = ({callback}) => {
         setTimeout(() => setActualWord(actualWord.substring(0, actualWord.length - 1)), 50)
       }else{
         setFireTypingUseEffect(false)
-        setActualWord("/")
+        setActualWord("")
         setTimeout(() => {
           setFireMoveUseEffect(true)
         }, 300);
@@ -61,7 +61,7 @@ const LoadScreen: React.FC<{callback: Function}> = ({callback}) => {
 
   return (
     <div id='load-screen'>
-        <span id='type-animation'>&lt;{actualWord}&gt;</span>
+        <span id='type-animation'>&lt;{actualWord}/&gt;</span>
     </div>
   );
 };

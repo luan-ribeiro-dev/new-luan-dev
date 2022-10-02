@@ -1,0 +1,17 @@
+#ide-image {
+  width: 100vw;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+@include breakpoint("mobile") {
+  #about-me > .row {
+    justify-content: center;
+  }
+  
+  #ide-div {
+    display: none;
+  }
+}

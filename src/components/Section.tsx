@@ -3,7 +3,7 @@ import React from 'react';
 const Section: React.FC<{id: string, image?:string}> = ({id, image, children}) => {
   if (image) {
     return (
-      <section id={id} className="section" style={{backgroundImage: 'url("'+image+'")'}}>
+      <section id={id} className="section" style={{backgroundImage: `url("${image}")`}}>
           {children}
       </section>
     );

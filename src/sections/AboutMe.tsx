@@ -1,36 +1,35 @@
 import React from 'react';
 import Section from "../components/Section";
+import SectionDescription from '../components/SectionDescription';
 
 const AboutMe: React.FC = () => {
   return (
     <Section id="about-me">
-      <h1 style={{ position: "absolute", left: 0, top: 0 }}>About Me</h1>
-
-      <div className="row overlay-row h-100">
-        <div className="col-12 col-sm-6 section-side-div">
-          <div className="section-info-div">
-            <h1>About me<figure className="green-square" /></h1>
-            <p>
-              Hello I am Luan, <span className="green-text">Junior Fullstack Web Developer</span>. 
-              I have +3 years of experience with programming and I am qualified 
-              to develop web applications, in your concept,
-              ideas and demands.
-            </p>
-            <p>
-              I already developed web applications by my self, 
-              worked with teams and worked developing tools.
-            </p>
-            <p>
-              I'm mostly proficient with backend work, 
-              MVC frameworks like <span className="green-text">Laravel and Django</span>, 
-              but I can handle frontend works too
-            </p>
+      <div className="row overlay-row flex-fill flex-column flex-sm-row">
+        <div className="col-12 col-sm-6">
+          <div className="section-side-div">
+            <div className="d-flex flex-fill align-items-center">
+              <SectionDescription
+                title="About Me"
+              >
+                <p>
+                  Hello! I am Luan, <span className="green-text">Mid-level Fullstack Web Developer</span>. 
+                  I have +4 years of experience with programming and I am qualified 
+                  to develop web applications in diverse programming languages and frameworks.
+                </p>
+                <p>
+                  I preffer to write a <span className="green-text">clean code</span>, tending
+                  to use object orientation, abstract solutions and following the project codebase.
+                  This improves the <span className="green-text">readability</span> and reuse of my code, which is an 
+                  advantage for the project maintenance and when working with a team of developers.
+                </p>
+              </SectionDescription>
+            </div>
           </div>
         </div>
-        <div className="col-12 col-sm-6 section-side-div position-relative" id="self-div">
-          {/* <img id="self-image" src="/assets/img/self2.jpg" alt="Me" />
-          <figure className="white-balls-pattern" id="pattern-ball-1"></figure>
-          <figure className="white-balls-pattern" id="pattern-ball-2"></figure> */}
+        <div className="col-12 col-sm-6 section-side-div position-relative flex-fill" id="ide-div">
+          <div id="ide-image" style={{backgroundImage: "url('/assets/img/ide.png')"}}>
+          </div>
         </div>
       </div>
     </Section>
