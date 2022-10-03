@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./styles/styles.scss";
 import Section from "./components/Section";
 import LoadScreen from "./components/LoadScreen";
-import {AboutMe, Home, Portfolio} from "./sections"
+import {AboutMe, Awards, Education, Home, Portfolio} from "./sections"
 
 interface IAppState {
   sections: string[],
@@ -89,14 +89,12 @@ export default class App extends React.Component<{}, IAppState> {
         
         <Portfolio />
         
-        <Section id="education">
-          <h1 style={{ position: "absolute", left: 0, top: 0 }}>education</h1>
-        </Section>
+        <Education />
+        
+        <Awards />
+        
         <Section id="skills">
           <h1 style={{ position: "absolute", left: 0, top: 0 }}>skills</h1>
-        </Section>
-        <Section id="awards">
-          <h1 style={{ position: "absolute", left: 0, top: 0 }}>awards</h1>
         </Section>
         <Section id="message">
           <h1 style={{ position: "absolute", left: 0, top: 0 }}>message</h1>

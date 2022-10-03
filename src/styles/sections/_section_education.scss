@@ -1,0 +1,52 @@
+#education {
+  height: auto;
+
+  & > h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  .career-history-progress {
+    position: relative;
+    padding: 0 0 5px 20px;
+    border-left: 2px solid $secondary_color;
+    max-width: 600px;
+    padding-top: 10px;
+
+    header {
+      display: flex;
+      flex-direction: column;
+      line-height: 0px;
+      line-height: 15px;
+
+      h6 {
+        margin: 0;
+        font-size: 1.1rem;
+        color: $secondary_color;
+        text-transform: uppercase;
+      }
+
+      span {
+        font-size: 0.8rem;
+        color: #DDD;
+      }
+    }
+
+    .description {
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+
+    &::before {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border: 2px solid $secondary_color;
+      background-color: $primary_color;
+      border-radius: 10rem;
+      top: -2px;
+      left: -6px;
+      content: "";
+    }
+  }
+}

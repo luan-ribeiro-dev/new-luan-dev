@@ -5,8 +5,8 @@ import SectionDescription from '../components/SectionDescription';
 const AboutMe: React.FC = () => {
   return (
     <Section id="about-me">
-      <div className="row overlay-row flex-fill flex-column flex-sm-row">
-        <div className="col-12 col-sm-6">
+      <div className="row overlay-row flex-fill flex-sm-row">
+        <div className="col-6 d-flex align-items-center">
           <div className="section-side-div">
             <div className="d-flex flex-fill align-items-center">
               <SectionDescription
@@ -27,7 +27,7 @@ const AboutMe: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-sm-6 section-side-div position-relative flex-fill" id="ide-div">
+        <div className="col-6 section-side-div position-relative flex-fill" id="ide-div">
           <div id="ide-image" style={{backgroundImage: "url('/assets/img/ide.png')"}}>
           </div>
         </div>

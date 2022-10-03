@@ -8,7 +8,7 @@
 #personal-info-div {
   margin-top: 50px;
   text-align: start;
-  font-size: 20px;
+  font-size: 1rem;
 
   .info {
     position: relative;
@@ -31,7 +31,7 @@
       font-weight: normal;
       position: absolute;
       left: 0;
-      padding-left: 200px;
+      padding-left: 160px;
     }
   }
 }
@@ -207,8 +207,7 @@
   }
 
   #section-green-circle {
-    width: 400px;
-    height: 400px;
+    display: none;
   }
 
   #pattern-ball-1 {

@@ -232,7 +232,7 @@ const Portfolio: React.FC = () => {
   const [portfolio, setPortfolio] = useState("")
 
   return (
-    <Section id="portfolio" image="/assets/img/notebook2.jpeg">
+    <Section id="portfolio" image="/assets/img/python.jpg">
       <SectionDescription title="Portfolio" id="portfolio-title" />
       <div id="portfolio-wrapper">
         <div className="row">

@@ -8,10 +8,19 @@
 
 @include breakpoint("mobile") {
   #about-me > .row {
-    justify-content: center;
+    justify-content: space-between;
   }
-  
-  #ide-div {
-    display: none;
+}
+
+@include breakpoint(450px) {
+  #about-me > .row {
+    & > div:not(.ide-div) {
+      width: 70%;
+    }
+
+    #ide-div {
+      width: 30%;
+      flex: 0 !important;
+    }
   }
 }
