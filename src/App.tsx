@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import "./styles/styles.scss";
 import Section from "./components/Section";
 import LoadScreen from "./components/LoadScreen";
-import {AboutMe, Home} from "./sections"
-import Portfolio from "./sections/Portfolio";
+import {AboutMe, Home, Portfolio} from "./sections"
 
 interface IAppState {
   sections: string[],
@@ -57,7 +56,6 @@ export default class App extends React.Component<{}, IAppState> {
   
   handleScroll(e:WheelEvent){
     let {sections, section, canHandleScroll} = this.state
-    console.log(canHandleScroll)
     if(canHandleScroll){
       this.setState({canHandleScroll:false})
       

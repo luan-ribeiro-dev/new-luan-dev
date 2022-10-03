@@ -14,7 +14,7 @@ const AboutMe: React.FC = () => {
               >
                 <p>
                   Hello! I am Luan, <span className="green-text">Mid-level Fullstack Web Developer</span>. 
-                  I have +4 years of experience with programming and I am qualified 
+                  I have +4 years of experience with programming and I am <span className="green-text">qualified </span>
                   to develop web applications in diverse programming languages and frameworks.
                 </p>
                 <p>

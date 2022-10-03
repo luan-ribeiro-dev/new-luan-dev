@@ -8,9 +8,9 @@
 #personal-info-div {
   margin-top: 50px;
   text-align: start;
+  font-size: 20px;
 
   .info {
-    margin-top: 10px;
     position: relative;
 
     a {
@@ -136,11 +136,13 @@
   #personal-info-div .info{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 
     .info-text {
       position: inherit;
       padding: 0;
       flex: 1;
+      white-space: inherit;
     }
 
     span {
@@ -217,11 +219,26 @@
     display: none;
   }
 
-  #personal-info-div .info{
+  #personal-info-div {
+    font-size: 15px;
     margin: 0;
-  }
+    .info{
+      margin: 0;
+      flex-direction: row;
+      height: 30px;
+      align-items: center;
+
+      .bold-text {
+        font-size: 12px;
+        margin-bottom: -2px;
+      } 
+    }
+  } 
 }
 
-@include breakpoint(500px) {
-  
+@include breakpoint(400px) {
+  #self-image {
+    width: 200px;
+    height: 200px;
+  }
 }
