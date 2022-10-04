@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Section from "../components/Section";
 import SectionDescription from '../components/SectionDescription';
 
-const PortfolioBox: React.FC<{id:string, image:string, title:string, onClick: Function, tags?:string[]}> = ({id, image, title, onClick, tags, children}) => {
+const PortfolioBox: React.FC<{id:string, image:string, title:string, onClick: Function, tags?:string[], children?: JSX.Element | JSX.Element[]}> = ({id, image, title, onClick, tags, children}) => {
   return (
     <div className='portfolio-box' id={id} onClick={() => onClick(id)}>
       <div className="image" style={{backgroundImage: `url("${image}")`}} />
@@ -233,7 +233,7 @@ const Portfolio: React.FC = () => {
 
   return (
     <Section id="portfolio" image="/assets/img/python.jpg">
-      <SectionDescription title="Portfolio" id="portfolio-title" />
+      <SectionDescription title="my work" id="portfolio-title" />
       <div id="portfolio-wrapper">
         <div className="row">
           {/* Skin Medicinals */}

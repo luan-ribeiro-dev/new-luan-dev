@@ -1,0 +1,88 @@
+#skills {
+  height: auto;
+
+  h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  .skill-flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    .skill-box {
+      padding: 10px 0;
+      margin: 0 1.5vw;
+      cursor: pointer;
+      transition: .2s;
+      
+      img {
+        width: 80px;
+      }
+
+      .javascript{
+        width: 88px;
+        margin-left: -3px;
+        margin-right: -3px;
+      }
+      .typescript {
+        width: 90px;
+        margin-right: -3px;
+        margin-left: -6px;
+        margin-top: 4px;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  .progress-bar-div {
+    margin-bottom: 20px;
+    font-size: 14px;
+    max-width: 370px;
+  
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+  
+      .description {
+        text-transform: uppercase;
+        color: #FFF;
+      }
+    }
+  
+    .empty-bar {
+      background-color: #ccc;
+      height: 5px;
+      border-radius: 10rem;
+  
+      .color-bar {
+        background-color: $secondary_color;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@include breakpoint(900px) {
+  #skills .skill-flex .skill-box {
+    img {
+      width: 60px;
+    }
+
+    .javascript{
+      width: 66px;
+      margin-left: -3px;
+      margin-right: -3px;
+    }
+    .typescript {
+      width: 66px;
+      margin-top: 6px;
+      margin-right: -3px;
+      margin-left: -2px;
+    }
+  }
+}

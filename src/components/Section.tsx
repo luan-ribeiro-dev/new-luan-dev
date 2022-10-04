@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Section: React.FC<{id: string, image?:string}> = ({id, image, children}) => {
+const Section: React.FC<{id: string, image?:string, children: JSX.Element | JSX.Element[]}> = ({id, image, children}) => {
   if (image) {
     return (
       <section id={id} className="section" style={{backgroundImage: `url("${image}")`}}>

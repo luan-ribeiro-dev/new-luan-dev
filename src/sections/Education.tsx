@@ -60,7 +60,7 @@ const Education: React.FC = () => {
       />
       <Box
         title="Web Development Agency"
-        year="2021 - 2022"
+        year="2020 - 2022"
         description={(
           <React.Fragment>
             <p>

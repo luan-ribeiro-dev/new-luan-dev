@@ -1,6 +1,10 @@
 $breakpoints: (
   'mobile': 575px,
   'tablet': 767px,
+  'sm': 575px,
+  'md': 767px,
+  'lg': 991px,
+  'xl': 1199px,
 ) !default;
 
 /// Mixin to manage responsive breakpoints
