@@ -1,0 +1,3 @@
+[submodule "new-luan-dev-build"]
+	path = new-luan-dev-build
+	url = git@github.com:luan-ribeiro-dev/new-luan-dev-build.git
