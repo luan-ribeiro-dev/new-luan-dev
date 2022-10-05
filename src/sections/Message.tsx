@@ -1,4 +1,5 @@
-import React, { ChangeEvent, FormEvent } from 'react';
+import axios from 'axios';
+import React, { FormEvent } from 'react';
 import Section from "../components/Section";
 
 type PROP_TYPES = {}
@@ -20,14 +21,25 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
     }
   }
 
-  handleChange(e: ChangeEvent) {
-    console.log(e)
-  }
-
   sendMessage(e: FormEvent<HTMLFormElement>): boolean {
     e.preventDefault()
 
-    console.log(this.state)
+    const {name, email, message} = this.state;
+    if (!name) {
+      alert("Please, set your name")
+    } else if (!email) {
+      alert("Please, set your email")
+    } else if (!message) {
+      alert("Please, set your message")
+    } else {
+      axios.post("/api/send_mail.php")
+        .then(res => {
+          alert("Your message was sent. Soon I'll get in touch")
+        })
+        .catch(error => {
+          alert("Something went wrong.\n\nPlease, try to manually send a email to contact@luanribeirosilva.com")
+        })
+    }
 
     return false
   }
@@ -36,7 +48,7 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
     return (
       <Section id="message">
         <h1>Send me a message<span className="green-text">!</span></h1>
-        <form id="form-contato" onSubmit={this.sendMessage}>
+        <form id="form-contato" onSubmit={(e) => {this.sendMessage(e)}}>
           <div className="row">
             <div className="form-group col-md-6 col-sm-12">
               <label htmlFor="name">Your name</label>
@@ -47,7 +59,7 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
                 name="name"
                 placeholder="Enter your name"
                 max="100" 
-                onChange={this.handleChange.bind(this)}
+                onChange={(e) => {this.setState({name: e.target.value})}}
               />
             </div>
             <div className="form-group col-md-6 col-sm-12">
@@ -59,7 +71,7 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
                 name="email"
                 placeholder="Enter your email" 
                 max="100" 
-                onChange={this.handleChange.bind(this)}
+                onChange={(e) => {this.setState({email: e.target.value})}}
               />
             </div>
           </div>
@@ -73,7 +85,7 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
               placeholder="Ex. Laravel software needed" 
               rows={6} 
               maxLength={5000} 
-              onChange={this.handleChange.bind(this)}
+              onChange={(e) => {this.setState({message: e.target.value})}}
             />
           </div>
   

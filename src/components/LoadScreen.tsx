@@ -48,7 +48,7 @@ const LoadScreen: React.FC<{callback: Function}> = ({callback}) => {
           setTimeout(() => {
             document.getElementById('load-screen')!.style.display = "none"
             callback()
-          }, 1200);
+          }, 600);
         }, 800);
       }, 200)
     }
