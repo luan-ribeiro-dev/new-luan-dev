@@ -73,12 +73,16 @@ a{
   color: $secondary_color;
 }
 
-.green-square {
+.green-square, .white-square {
   background-color: $secondary_color;
   width: 0.2em;
   height: 0.2em;
   margin: 0;
   display: inline-block;
+}
+
+.white-square {
+  background-color: #FFF;
 }
 
 .overlay-row {

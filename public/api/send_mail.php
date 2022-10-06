@@ -15,13 +15,13 @@ if (count($errors) > 0) {
 	$message = $_POST['message'];
 
 	// emails para quem será enviado o formulário
-	$emailenviar = "contact@luan-dev.com";
+	$emailenviar = "contact@luanribeirosilva.com";
 	$destino = "luan.ribeiro.dev@gmail.com";
 
 	// É necessário indicar que o formato do e-mail é html
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-	$headers .= 'From: luan-dev.com <contact@luan-dev.com>';
+	$headers .= 'From: luanribeirosilva.com <contact@luanribeirosilva.com>';
 	// $headers .= "Bcc: contato@luan-dev.com\r\n";
 
 	$message = "<h1>Um usuário enviou um contato para você através de seu site:</h1>";

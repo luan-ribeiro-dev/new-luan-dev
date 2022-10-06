@@ -16,7 +16,7 @@ export default class App extends React.Component {
   render(): React.ReactNode {
     return (
       <div className="app" id="app">
-        <LoadScreen callback={() => this.setState({homeActive: true})} />
+        {/* <LoadScreen callback={() => this.setState({homeActive: true})} /> */}
         
         <Home />
         

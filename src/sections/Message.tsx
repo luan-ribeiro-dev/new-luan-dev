@@ -47,7 +47,7 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
   render(): React.ReactNode {
     return (
       <Section id="message">
-        <h1>Send me a message<span className="green-text">!</span></h1>
+        <h1>Send me a message!</h1>
         <form id="form-contato" onSubmit={(e) => {this.sendMessage(e)}}>
           <div className="row">
             <div className="form-group col-md-6 col-sm-12">

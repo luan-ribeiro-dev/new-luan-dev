@@ -7,6 +7,11 @@
   width: 100%;
 
   h1 {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  h1, h1 span {
     font-size: calc(2.5rem + 1.3vw);
     line-height: 0.9em;
     font-family: "Gotham Black";
