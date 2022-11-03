@@ -9,7 +9,6 @@ const Home: React.FC = () => {
 
       <div id="top-bar">
         <span id="logo">&lt;/&gt;</span>
-        <i className="fas fa-bars" id="menu-bar-button" title="Open navigation menu"></i>
       </div>
       <div className="row overlay-row flex-fill flex-column flex-sm-row">
         <div className="col-12 col-sm-6">
@@ -29,8 +28,8 @@ const Home: React.FC = () => {
                     </div>
                     <div className="info">
                       <span className="bold-text">Email:&nbsp;</span>
-                      <a href="mailto:contact@luan-dev.com">
-                        <span className="info-text">contact@luan-dev.com</span>
+                      <a href="mailto:contact@luanribeirosilva.com">
+                        <span className="info-text">contact@luanribeirosilva.com</span>
                       </a>
                     </div>
                     <div className="info">
@@ -43,7 +42,7 @@ const Home: React.FC = () => {
                     </div>
                     <div className="info">
                       <span className="bold-text">WORKING HOURS:&nbsp;</span>
-                      <span className="info-text">Fulltime - <span className="white-space-nowrap">08:00 am</span> - <span className="white-space-nowrap">05:00 pm</span> (EST/EDT)</span>
+                      <span className="info-text">Fulltime - <span className="white-space-nowrap">9:00 am</span> - <span className="white-space-nowrap">05:00 pm</span> (EDT)</span>
                     </div>
                   </div>
                 </div>

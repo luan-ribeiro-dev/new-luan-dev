@@ -10,13 +10,12 @@ export default class App extends React.Component {
 
     // You got me =D
     console.log("Nothing here :D") 
-
   }
   
   render(): React.ReactNode {
     return (
       <div className="app" id="app">
-        <LoadScreen callback={() => this.setState({homeActive: true})} />
+        <LoadScreen callback={() => {}} />
         
         <Home />
         
