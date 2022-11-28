@@ -4,7 +4,6 @@ import Section from "../components/Section";
 
 type PROP_TYPES = {}
 type STATE_TYPES = {
-  name:string
   email:string
   message:string
 }
@@ -15,7 +14,6 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
     super(props)
 
     this.state = {
-      name: "",
       email: "",
       message: "",
     }
@@ -24,15 +22,17 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
   sendMessage(e: FormEvent<HTMLFormElement>): boolean {
     e.preventDefault()
 
-    const {name, email, message} = this.state;
-    if (!name) {
-      alert("Please, set your name")
-    } else if (!email) {
+    const {email, message} = this.state;
+    if (!email) {
       alert("Please, set your email")
     } else if (!message) {
       alert("Please, set your message")
     } else {
-      axios.post("/api/send_mail.php")
+      var data = new FormData();
+      data.append('email', email);
+      data.append('message', message);
+      
+      axios.post("/api/send_mail.php", data)
         .then(res => {
           alert("Your message was sent. Soon I'll get in touch")
         })
@@ -50,19 +50,7 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
         <h1>Send me a message!</h1>
         <form id="form-contato" onSubmit={(e) => {this.sendMessage(e)}}>
           <div className="row">
-            <div className="form-group col-md-6 col-sm-12">
-              <label htmlFor="name">Your name</label>
-              <input 
-                type="text" 
-                className="form-control" 
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                max="100" 
-                onChange={(e) => {this.setState({name: e.target.value})}}
-              />
-            </div>
-            <div className="form-group col-md-6 col-sm-12">
+            <div className="form-group col">
               <label htmlFor="email">Your email</label>
               <input 
                 type="text" 
@@ -76,28 +64,32 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
             </div>
           </div>
   
-          <div className="form-group">
-            <label htmlFor="message-text">Your message</label>
-            <textarea 
-              className="form-control" 
-              id="menssage-text" 
-              name="menssage-text" 
-              placeholder="Ex. Laravel software needed" 
-              rows={6} 
-              maxLength={5000} 
-              onChange={(e) => {this.setState({message: e.target.value})}}
-            />
+          <div className="row">
+            <div className="form-group col">
+              <label htmlFor="message-text">Your message</label>
+              <textarea 
+                className="form-control" 
+                id="menssage-text" 
+                name="menssage-text" 
+                placeholder="Ex. Laravel software needed" 
+                rows={6} 
+                maxLength={5000} 
+                onChange={(e) => {this.setState({message: e.target.value})}}
+              />
+            </div>
           </div>
   
-          <div className="d-flex justify-content-center mt-3">
-            <button type="submit" className="btn btn-submit">
-              Send
-              <i className="long-arrow">
-                <div className="horizontal-rectangle"/>
-                <div className="top-inclined-rectangle"/>
-                <div className="bottom-inclined-rectangle"/>
-              </i>
-            </button>
+          <div className="row">
+            <div className="d-flex justify-content-center mt-3 col">
+              <button type="submit" className="btn btn-submit">
+                Send
+                <i className="long-arrow">
+                  <div className="horizontal-rectangle"/>
+                  <div className="top-inclined-rectangle"/>
+                  <div className="bottom-inclined-rectangle"/>
+                </i>
+              </button>
+            </div>
           </div>
         </form>
       </Section>
