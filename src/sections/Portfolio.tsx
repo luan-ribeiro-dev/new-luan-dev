@@ -229,7 +229,23 @@ const Modal: React.FC<{portfolioId:string, setPortfolio:Function}> = ({portfolio
 }
 
 const Portfolio: React.FC = () => {
-  const [portfolio, setPortfolio] = useState("")
+  const path = window.location.pathname.substring(1)
+  const [portfolio, setPortfolio] = useState(path)
+  
+  useEffect(() => {
+    document.getElementById(path)?.scrollIntoView({
+      block: 'end'
+    });
+  }, [path])
+  
+  useEffect(() => {
+    if (portfolio != "") {
+      document.documentElement.style.overflow = "hidden"
+    } else {
+      document.documentElement.style.overflow = "overlay"
+    }
+    window.history.pushState({}, '', `/${portfolio}`);
+  }, [portfolio])
 
   return (
     <Section id="portfolio" image="/assets/img/python.jpg">

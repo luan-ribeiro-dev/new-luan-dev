@@ -15,7 +15,9 @@ export default class App extends React.Component {
   render(): React.ReactNode {
     return (
       <div className="app" id="app">
-        <LoadScreen callback={() => {}} />
+        {window.location.pathname === "/" && (
+          <LoadScreen callback={() => {}} />
+        )}
         
         <Home />
         
