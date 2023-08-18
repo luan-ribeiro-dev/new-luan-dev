@@ -37,7 +37,7 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
           alert("Your message was sent. Soon I'll get in touch")
         })
         .catch(error => {
-          alert("Something went wrong.\n\nPlease, try to manually send a email to contact@luanribeirosilva.com")
+          alert("Something went wrong.\n\nPlease, try to manually send a email to contact@luan-dev.com")
         })
     }
 

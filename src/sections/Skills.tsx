@@ -76,15 +76,11 @@ const Skills: React.FC = () => {
           <div className="mt-3">
             <ProgressBar
               description="Laravel"
-              porcent={80}
-            />
-            <ProgressBar
-              description="Django"
-              porcent={60}
+              porcent={90}
             />
             <ProgressBar
               description="ReactJS"
-              porcent={70}
+              porcent={90}
             />
             <ProgressBar
               description="Backend"
@@ -92,7 +88,7 @@ const Skills: React.FC = () => {
             />
             <ProgressBar
               description="Frontend"
-              porcent={60}
+              porcent={70}
             />
           </div>
         </div>

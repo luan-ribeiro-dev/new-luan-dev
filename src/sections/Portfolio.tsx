@@ -248,7 +248,7 @@ const Portfolio: React.FC = () => {
   }, [portfolio])
 
   return (
-    <Section id="portfolio" image="/assets/img/python.jpg">
+    <Section id="portfolio" image="/assets/img/reactjs.jpg">
       <div className="section-description" id="portfolio-title">
         <h1> my<span className="green-text">work</span> <figure className="white-square" /></h1>
       </div>

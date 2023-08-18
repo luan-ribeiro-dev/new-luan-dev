@@ -17,7 +17,7 @@ if (count($errors) > 0) {
 	// É necessário indicar que o formato do e-mail é html
 	$headers  = "MIME-Version: 1.0\r\n";
 	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-	$headers .= "From: luanribeirosilva.com <contact@luanribeirosilva.com>\r\n";
+	$headers .= "From: luan-dev.com <contact@luan-dev.com>\r\n";
 	// $headers .= "Bcc: contato@luan-dev.com\r\n";
 
 	$message = "
