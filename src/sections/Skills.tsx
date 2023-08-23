@@ -34,7 +34,7 @@ const Skills: React.FC = () => {
     <Section id="skills">
       <div className="row">
         <div className="col-12 col-sm-6">
-          <h4>Programming Frameworks</h4>
+          <h4>Frameworks de Programação</h4>
           <div className="skill-flex">
             {FRAMEWORK_IMAGE_LIST.map((image, index) => (
               <div key={image+index} className="skill-box">

@@ -47,17 +47,17 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
   render(): React.ReactNode {
     return (
       <Section id="message">
-        <h1>Send me a message!</h1>
+        <h1>Me mande uma mensagem!</h1>
         <form id="form-contato" onSubmit={(e) => {this.sendMessage(e)}}>
           <div className="row">
             <div className="form-group col">
-              <label htmlFor="email">Your email</label>
+              <label htmlFor="email">Seu email</label>
               <input 
                 type="text" 
                 className="form-control" 
                 id="email"
                 name="email"
-                placeholder="Enter your email" 
+                placeholder="email.exemplo@exemplo.com" 
                 max="100" 
                 onChange={(e) => {this.setState({email: e.target.value})}}
               />
@@ -66,12 +66,12 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
   
           <div className="row">
             <div className="form-group col">
-              <label htmlFor="message-text">Your message</label>
+              <label htmlFor="message-text">Sua mensagem</label>
               <textarea 
                 className="form-control" 
                 id="menssage-text" 
                 name="menssage-text" 
-                placeholder="Ex. Laravel software needed" 
+                placeholder="Preciso de um desenvolvedor fullstack Laravel..." 
                 rows={6} 
                 maxLength={5000} 
                 onChange={(e) => {this.setState({message: e.target.value})}}
@@ -82,7 +82,7 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
           <div className="row">
             <div className="d-flex justify-content-center mt-3 col">
               <button type="submit" className="btn btn-submit">
-                Send
+                Enviar
                 <i className="long-arrow">
                   <div className="horizontal-rectangle"/>
                   <div className="top-inclined-rectangle"/>

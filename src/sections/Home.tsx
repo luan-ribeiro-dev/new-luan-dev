@@ -18,13 +18,13 @@ const Home: React.FC = () => {
                 title="Luan Ribeiro"
               >
                 <p>
-                  Fullstack Web Developer, Computer Technician.
+                Desenvolvedor Web Fullstack
                 </p>
                 <div>
                   <div id="personal-info-div">
                     <div className="info">
-                      <span className="bold-text">AGE:&nbsp;</span>
-                      <span className="info-text">21</span>
+                      <span className="bold-text">Idade:&nbsp;</span>
+                      <span className="info-text">22</span>
                     </div>
                     <div className="info">
                       <span className="bold-text">Email:&nbsp;</span>
@@ -33,16 +33,16 @@ const Home: React.FC = () => {
                       </a>
                     </div>
                     <div className="info">
-                      <span className="bold-text">LOCATION:&nbsp;</span>
+                      <span className="bold-text">Localização:&nbsp;</span>
                       <span className="info-text">Brasil - São Paulo</span>
                     </div>
                     <div className="info">
-                      <span className="bold-text">EXPERIENCE:&nbsp;</span>
-                      <span className="info-text">Mid-level +4 years</span>
+                      <span className="bold-text">Experiência:&nbsp;</span>
+                      <span className="info-text">Plenor, +4 Anos</span>
                     </div>
                     <div className="info">
-                      <span className="bold-text">WORKING HOURS:&nbsp;</span>
-                      <span className="info-text">Fulltime - <span className="white-space-nowrap">8:00 am</span> - <span className="white-space-nowrap">08:00 pm</span> (EDT)</span>
+                      <span className="bold-text">Horário:&nbsp;</span>
+                      <span className="info-text">12h/6 - <span className="white-space-nowrap">(8:00</span> - <span className="white-space-nowrap">21:00)</span></span>
                     </div>
                   </div>
                 </div>

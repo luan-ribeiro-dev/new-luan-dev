@@ -49,19 +49,15 @@ const portfolios:{[key: string]: Iportfolios} = {
     description: (
       <React.Fragment>
         <p>
-          Skin Medicinals is a CRM/ERP application for the management of patients prescriptions
+          Skin Medicinals é uma aplicação CRM/ERP para o gerenciamento de prescrições online
         </p>
         <p>
-          I worked with a team of developers and my job was to fix bugs and implement
-          features following the project leader instructions.
+          O projeto é desenvolvido em Laravel/ReactJS e trabalhei como fullstack com um time de desenvolvedores.
+          Meu trabalho foi resolver bugs, gerenciar o banco de dados e implementar novas funcionalidade ao projeto.
         </p>
         <p>
-          It was developed with Laravel, ReactJS and MySQL.
-        </p>
-        <p>
-          The purpuse of this application is to allow doctors to give skin prescriptions for patients
-          treatments. The main features includes buy/shipping of the prescription, reminders,
-          autoreffils, dep contracts and analytics
+          O proposito dessa aplicação é permitir que médicos possam dar prescrições de tratamentos para pacientes.
+          As principais funcionalidades incluem compra/envio de medicações, lembretes, renovações automáticas, contratos e analises
         </p>
       </React.Fragment>
     )
@@ -77,19 +73,19 @@ const portfolios:{[key: string]: Iportfolios} = {
     description: (
       <React.Fragment>
         <p>
-          StoneAlgo is a CRM application, E-Commerce of diamonds
+          Stonealgo é uma aplicação CRM, E-Commerce de joias e diamantes
         </p>
         <p>
-          I worked with a team of developers and my job was to fix bugs and implement
-          features following the project leader instructions.
+          Eu trabalhei com um time de desenvolvedores e meu trabalho foi resolver bugs e implementar
+          novas funcionalidades seguindo as instruções do líder do projeto.
         </p>
         <p>
-          It was developed with Django, Twig and MySQL.
+          Foi desenvolvido com Django, Twig e MySQL.
         </p>
         <p>
-          The purpuse of this application is to sell jewelry to customers. 
-          The main features includes jewelry comparation, filters, alerts and management of 
-          appointments and diamonds
+          O proposito dessa aplicação é vender joias para clientes.
+          As principais funcionalidades incluem comparação de joias, filtros, alertas e gerenciamento de
+          agendamentos e diamantes.
         </p>
       </React.Fragment>
     )
@@ -110,22 +106,15 @@ const portfolios:{[key: string]: Iportfolios} = {
     description: (
       <React.Fragment>
         <p>
-          LZ Facilities is a ERP software for management and automation of
-          the routines of a cleaning service provider.
+          LZ Facilities é uma aplicação ERP desenvolvido com PHP/MySQL para o gerenciamento e automação de rotinas de uma empresa de limpeza.
         </p>
         <p>
-          I developed this software by my self following the client instructions and feedback. <br/>
+          100% desse projeto foi desenvolvido por mim seguindo as instruções e feedback do cliente. <br/>
         </p>
 
         <p>  
-          It was developed with PHP OOP and MySQL. Since the client requested pure PHP 
-          and no framework, I created a <span className="green-text">MVC structure </span>
-          similar to the Laravel framework in order to keep the <span className="green-text">readability</span> and organized code.
-        </p>  
-        
-        <p>  
-          The main functionality of this software includes the management of contracts, profits, activities,
-          tasks, stocks, chat, digital punch in and bus costs.
+          As funcionalidade desse projeto incluem o gerenciamento de contratos, lucros,
+          atividades, tarefas, estoque, chat, ponto digital e custos de ônibus.
         </p>
       </React.Fragment>
     )
@@ -142,19 +131,16 @@ const portfolios:{[key: string]: Iportfolios} = {
     description: (
       <React.Fragment>
         <p>
-          AFAR Produtora is a ERP/CRM software, anime event ticket seller.
+          AFAR Produtora é uma aplicação CRM/ERP, foi desenvolvido com Laravel/MySQL, é um
+          E-commerce de ingressos de shows de anime.
         </p>
         <p>
-          I was hired to fix few bugs and implement features in the admin panel. <br/>
+          Fui contratado para resolver bugs e implementar funcionalidades no painel administrativo. <br/>
         </p>
 
         <p>  
-          It was developed with Laravel and MySQL. 
-        </p>  
-        
-        <p>  
-          The purpuse of this application is to sell tickets and give info about anime events.
-          The main feature includes buy/management of tickets and analytical charts.
+          O proposito desse projeto é vender ingressos e dar informações sobre de shows de anime.
+          Umas das outras funcionalidades incluem muitos graficos e relatórios.
         </p>
       </React.Fragment>
     )
@@ -250,7 +236,7 @@ const Portfolio: React.FC = () => {
   return (
     <Section id="portfolio" image="/assets/img/reactjs.jpg">
       <div className="section-description" id="portfolio-title">
-        <h1> my<span className="green-text">work</span> <figure className="white-square" /></h1>
+        <h1> meus<span className="green-text">trabalhos</span> <figure className="white-square" /></h1>
       </div>
       <div id="portfolio-wrapper">
         <div className="row">
@@ -264,8 +250,8 @@ const Portfolio: React.FC = () => {
               onClick={(id:string) => setPortfolio(id)}
             >
               <p>
-                CRM/ERP application. <br/>
-                Online management of patient prescriptions
+                Aplicação CRM/ERP. <br/>
+                Gerenciamento de prescrições médicas online.
               </p>
             </PortfolioBox>
           </div>
@@ -279,8 +265,8 @@ const Portfolio: React.FC = () => {
               onClick={(id:string) => setPortfolio(id)}
             >
               <p>
-                CRM application. <br/>
-                E-Commerce Jewelry.
+                Aplicação CRM. <br/>
+                E-Commerce de jóias.
               </p>
             </PortfolioBox>
           </div>
@@ -294,8 +280,8 @@ const Portfolio: React.FC = () => {
               onClick={(id:string) => setPortfolio(id)}
             >
               <p>
-                ERP application. <br/>
-                Cleaning service provider management.
+                Aplicação ERP<br/>
+                Gerenciamente de prestação de serviços de limpeza.
               </p>
             </PortfolioBox>
           </div>
@@ -309,8 +295,8 @@ const Portfolio: React.FC = () => {
               onClick={(id:string) => setPortfolio(id)}
             >
               <p>
-                CRM/ERP application. <br/>
-                Anime event management.
+                Aplicação CRM/ERP. <br/>
+                Gerenciamente de eventos e ingreços de shows de anime.
               </p>
             </PortfolioBox>
           </div>

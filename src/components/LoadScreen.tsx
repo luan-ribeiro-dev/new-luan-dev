@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const LoadScreen: React.FC<{callback: Function}> = ({callback}) => {
-  const word = "Fullstack Web Developer"
+  const word = "Desenvolvedor Web Fullstack"
   
   const [actualWord, setActualWord] = useState("")
   const [starting, setStarting] = useState(true)

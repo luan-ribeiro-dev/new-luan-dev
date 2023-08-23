@@ -10,18 +10,18 @@ const AboutMe: React.FC = () => {
           <div className="section-side-div">
             <div className="d-flex flex-fill align-items-center">
               <div className="section-description">
-                <h1> about<span className="green-text">me</span> <figure className="white-square" /></h1>
+                <h1> sobre<span className="green-text">mim</span> <figure className="white-square" /></h1>
                 <div>
                   <p>
-                    Hello! I am Luan, <span className="green-text">Mid-level Fullstack Web Developer</span>. 
-                    I have +4 years of experience with programming and I am <span className="green-text">qualified </span>
-                    to develop web applications in diverse programming languages and frameworks.
+                    Olá! Sou Luan, <span className="green-text">Desenvolvedor Web Fullstack Senior</span>. 
+                    Eu tenho +4 anos de experiência com programação e sou <span className="green-text"> qualificado </span>
+                    para desenvolver aplicações web em diversas linguagens de programação e frameworks.
                   </p>
                   <p>
-                    I preffer to write a <span className="green-text">clean code</span>, tending
-                    to use object orientation, abstract solutions and following the project codebase.
-                    This improves the <span className="green-text">readability</span> and reuse of my code, which is an 
-                    advantage for the project maintenance and when working with a team of developers.
+                    Eu escrevo um <span className="green-text">codigo limpo</span>, tendendo
+                    usar orientação a objeto, soluções simples e eficientes e a seguir o codebase do projeto.
+                    Isso melhor a <span className="green-text">leitura</span> e reuso do meu código, o que torna uma 
+                    vantagem para a manuntenção do projeto quando se trabalha com um time de desenvolvedores.
                   </p>
                 </div>
               </div>
