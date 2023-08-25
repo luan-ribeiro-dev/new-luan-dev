@@ -43,7 +43,7 @@ const Skills: React.FC = () => {
             ))}
           </div>
           
-          <h4 className="mt-5">PROGRAMMING LANGUAGES</h4>
+          <h4 className="mt-5">Linguagens de Programação</h4>
           <div className="skill-flex">
             <div  className="skill-box">
               <img src={"/assets/img/icons/php.png"} />
@@ -72,7 +72,7 @@ const Skills: React.FC = () => {
           </div>
         </div>
         <div className="col-12 col-sm-6 d-flex flex-column justify-content-center">
-          <h4>Expertise</h4>
+          <h4>Skills</h4>
           <div className="mt-3">
             <ProgressBar
               description="Laravel"

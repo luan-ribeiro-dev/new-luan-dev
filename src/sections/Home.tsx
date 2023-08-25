@@ -38,11 +38,11 @@ const Home: React.FC = () => {
                     </div>
                     <div className="info">
                       <span className="bold-text">Experiência:&nbsp;</span>
-                      <span className="info-text">Plenor, +4 Anos</span>
+                      <span className="info-text">Desenvolvedor Web Fullstack Plenor, +4 Anos</span>
                     </div>
                     <div className="info">
                       <span className="bold-text">Horário:&nbsp;</span>
-                      <span className="info-text">12h/6 - <span className="white-space-nowrap">(8:00</span> - <span className="white-space-nowrap">21:00)</span></span>
+                      <span className="info-text">Fulltime ou 12h/dia - <span className="white-space-nowrap">(8:00</span> - <span className="white-space-nowrap">21:00)</span></span>
                     </div>
                   </div>
                 </div>

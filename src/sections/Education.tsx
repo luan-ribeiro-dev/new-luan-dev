@@ -23,7 +23,7 @@ const Education: React.FC = () => {
       <Box
         title="ETEC de Guaianazes"
         year="2017 - 2018"
-        description={(<p>Desenvolvido de software</p>)}
+        description={(<p>Desenvolvedor de software</p>)}
       />
 
       <h3 className="mt-3">Experiência</h3>
@@ -46,26 +46,26 @@ const Education: React.FC = () => {
       />
       <Box
         title="LIMPEZA COM ZELO"
-        year="2020"
+        year="2020 - 2021"
         description={(
           <React.Fragment>
             <p>
-              Limpesza com zelo é uma empresa privada que me contratou para desenvolver um
+              Limpeza com zelo é uma empresa privada que me contratou para desenvolver um
               ERP Web em PHP para gerenciamento e automação das rotinas de uma empresa de limpeza.
             </p>
           </React.Fragment>
         )}
       />
       <Box
-        title="Agencia de desenvolvimento"
-        year="2020 - 2022"
+        title="Upwork"
+        year="2021 - 2023"
         description={(
           <React.Fragment>
             <p>
-              Durante 2 anos eu trabalhei como fullstack para uma agencia de desenvolvimento web.
+              Durante 2 anos eu trabalhei como fullstack para uma agência de desenvolvimento web.
             </p>
             <p>
-              tive 3 trabalhos de médio/longo prazo e tive a oportunidade de trabalhar com 
+              Tive 3 trabalhos de médio/longo prazo e tive a oportunidade de trabalhar com 
               Laravel, Django, ReactJS, Node, API e MySQL, tive uma ótima experiência com a equipe de desenvolvedores lá.
             </p>
           </React.Fragment>

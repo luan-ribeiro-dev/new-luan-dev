@@ -18,10 +18,10 @@ const AboutMe: React.FC = () => {
                     para desenvolver aplicações web em diversas linguagens de programação e frameworks.
                   </p>
                   <p>
-                    Eu escrevo um <span className="green-text">codigo limpo</span>, tendendo
+                    Eu escrevo um <span className="green-text">código limpo</span>, tendendo
                     usar orientação a objeto, soluções simples e eficientes e a seguir o codebase do projeto.
                     Isso melhor a <span className="green-text">leitura</span> e reuso do meu código, o que torna uma 
-                    vantagem para a manuntenção do projeto quando se trabalha com um time de desenvolvedores.
+                    vantagem para a manutenção do projeto quando se trabalha com um time de desenvolvedores.
                   </p>
                 </div>
               </div>

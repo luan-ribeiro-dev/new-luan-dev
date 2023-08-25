@@ -113,7 +113,7 @@ const portfolios:{[key: string]: Iportfolios} = {
         </p>
 
         <p>  
-          As funcionalidade desse projeto incluem o gerenciamento de contratos, lucros,
+          As funcionalidades desse projeto incluem o gerenciamento de contratos, lucros,
           atividades, tarefas, estoque, chat, ponto digital e custos de ônibus.
         </p>
       </React.Fragment>
@@ -140,7 +140,7 @@ const portfolios:{[key: string]: Iportfolios} = {
 
         <p>  
           O proposito desse projeto é vender ingressos e dar informações sobre de shows de anime.
-          Umas das outras funcionalidades incluem muitos graficos e relatórios.
+          Umas das outras funcionalidades incluem muitos gráficos e relatórios.
         </p>
       </React.Fragment>
     )
@@ -266,7 +266,7 @@ const Portfolio: React.FC = () => {
             >
               <p>
                 Aplicação CRM. <br/>
-                E-Commerce de jóias.
+                E-Commerce de joias.
               </p>
             </PortfolioBox>
           </div>
@@ -281,7 +281,7 @@ const Portfolio: React.FC = () => {
             >
               <p>
                 Aplicação ERP<br/>
-                Gerenciamente de prestação de serviços de limpeza.
+                Gerenciamento de prestação de serviços de limpeza.
               </p>
             </PortfolioBox>
           </div>
@@ -296,7 +296,7 @@ const Portfolio: React.FC = () => {
             >
               <p>
                 Aplicação CRM/ERP. <br/>
-                Gerenciamente de eventos e ingreços de shows de anime.
+                Gerenciamento de eventos e ingressos de shows de anime.
               </p>
             </PortfolioBox>
           </div>

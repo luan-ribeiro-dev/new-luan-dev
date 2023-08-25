@@ -57,7 +57,7 @@ class Message extends React.Component<PROP_TYPES, STATE_TYPES> {
                 className="form-control" 
                 id="email"
                 name="email"
-                placeholder="email.exemplo@exemplo.com" 
+                placeholder="email@exemplo.com" 
                 max="100" 
                 onChange={(e) => {this.setState({email: e.target.value})}}
               />
