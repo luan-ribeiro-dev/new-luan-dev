@@ -34,15 +34,30 @@ const Home: React.FC = () => {
                     </div>
                     <div className="info">
                       <span className="bold-text">Localização:&nbsp;</span>
-                      <span className="info-text">Brasil - São Paulo</span>
+                      <span className="info-text">Brasil - São Paulo - São Miguel Paulista</span>
                     </div>
                     <div className="info">
                       <span className="bold-text">Experiência:&nbsp;</span>
-                      <span className="info-text">Desenvolvedor Web Fullstack Plenor, +4 Anos</span>
+                      <span className="info-text">Desenvolvedor Web Fullstack Junior, +4 Anos</span>
                     </div>
                     <div className="info">
-                      <span className="bold-text">Horário:&nbsp;</span>
-                      <span className="info-text">Fulltime ou 12h/dia - <span className="white-space-nowrap">(8:00</span> - <span className="white-space-nowrap">21:00)</span></span>
+                      <span className="bold-text">Github:&nbsp;</span>
+                      <a href="https://github.com/luan-ribeiro-dev?tab=repositories" target="_blank" rel="noopener noreferrer">
+                        <span className="info-text">github.com/luan-ribeiro-dev</span>
+                      </a>
+                    </div>
+                    <div className="info">
+                      <span className="bold-text">Linkedin:&nbsp;</span>
+                      <a href="https://www.linkedin.com/in/luan-ribeiro-dev/" target="_blank" rel="noopener noreferrer">
+                        <span className="info-text">linkedin.com/in/luan-ribeiro-dev/</span>
+                      </a>
+                    </div>
+                    <div className="info mt-3">
+                      <a href="/assets/pdf/CV_Desenvolvedor_Web_Fullstack_Luan_Ribeiro_Set_2023.pdf" target="_blank" rel="noopener noreferrer">
+                        <button className="btn btn-submit">
+                          Baixar Currículo
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>

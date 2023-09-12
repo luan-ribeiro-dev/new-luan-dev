@@ -26,9 +26,9 @@ export default class App extends React.Component {
     return (
       <div className="app" id="app">
         {/* {window.location.pathname === "/" && ( !visited || visited <= 1 )  && ( */}
-        {window.location.pathname === "/" && (
+        {/* {window.location.pathname === "/" && (
           <LoadScreen callback={() => {}} />
-        )}
+        )} */}
         
         <Home />
         
@@ -38,7 +38,7 @@ export default class App extends React.Component {
         
         <Education />
         
-        <Skills />
+        {/* <Skills /> */}
         
         <Awards />
         

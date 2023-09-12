@@ -13,7 +13,7 @@ const AboutMe: React.FC = () => {
                 <h1> sobre<span className="green-text">mim</span> <figure className="white-square" /></h1>
                 <div>
                   <p>
-                    Olá! Sou Luan, <span className="green-text">Desenvolvedor Web Fullstack Senior</span>. 
+                    Olá! Sou Luan, <span className="green-text">Desenvolvedor Web Fullstack junior</span>. 
                     Eu tenho +4 anos de experiência com programação e sou <span className="green-text"> qualificado </span>
                     para desenvolver aplicações web em diversas linguagens de programação e frameworks.
                   </p>

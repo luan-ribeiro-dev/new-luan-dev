@@ -1,4 +1,4 @@
-#skills {
+#skills, #education {
   height: auto;
 
   h4 {
@@ -11,24 +11,17 @@
     flex-wrap: wrap;
 
     .skill-box {
-      padding: 10px 0;
-      margin: 0 1.5vw;
+      padding: 10px 10px;
       cursor: pointer;
       transition: .2s;
+      width: 25%;
+      max-width: 100px;
       
       img {
-        width: 80px;
-      }
-
-      .javascript{
-        width: 88px;
-        margin-left: -3px;
-        margin-right: -3px;
-      }
-      .typescript {
-        width: 90px;
-        margin-right: -3px;
-        margin-left: -6px;
+        width: 100%;
+        border: 15px solid #FFF;
+        outline: none;
+        border-radius: 5px;
       }
 
       &:hover {
@@ -67,20 +60,13 @@
 }
 
 @include breakpoint(900px) {
-  #skills .skill-flex .skill-box {
-    img {
-      width: 60px;
-    }
+  #skills, #education .skill-flex .skill-box span {
+    font-size: .8rem;
+  }
+}
 
-    .javascript{
-      width: 66px;
-      margin-left: -3px;
-      margin-right: -3px;
-    }
-    .typescript {
-      width: 66px;
-      margin-right: -3px;
-      margin-left: -2px;
-    }
+@include breakpoint('mobile') {
+  #skills, #education .skill-flex .skill-box {
+    width: 25%;
   }
 }

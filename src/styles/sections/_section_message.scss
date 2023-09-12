@@ -40,49 +40,6 @@
     border-radius: 0;
     padding: 5px;
   }
-
-  .btn {
-    color: #FFF;
-    border-radius: 5px;
-    border: 1px solid $secondary_color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 10px 60px;
-    font-size: 1.2rem;
-
-    .long-arrow {
-      padding-left: 10px;
-      position: relative;
-
-      .horizontal-rectangle {
-        width: 30px;
-        height: 1px;
-        background-color: #FFF;
-      }
-
-      .top-inclined-rectangle {
-        width: 5px;
-        height: 1px;
-        background-color: #FFF;
-        transform: rotateZ(45deg);
-        position: absolute;
-        top: -2px;
-        right: 0;
-      }
-      
-      .bottom-inclined-rectangle {
-        width: 5px;
-        height: 1px;
-        background-color: #FFF;
-        transform: rotateZ(-45deg);
-        position: absolute;
-        top: 2px;
-        right: 0;
-      }
-    }
-  }
 }
 
 @include breakpoint("tablet") {
