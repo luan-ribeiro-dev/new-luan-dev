@@ -2,19 +2,30 @@ import React, { useEffect, useState } from 'react';
 import Section from "../components/Section";
 import SectionDescription from '../components/SectionDescription';
 
-const PortfolioBox: React.FC<{id:string, image:string, title:string, onClick: Function, tags?:string[], children?: JSX.Element | JSX.Element[]}> = ({id, image, title, onClick, tags, children}) => {
+const PortfolioBox: React.FC<{id:string, image:string, title:string, url:string, onClick: Function, tags?:string[], children?: JSX.Element | JSX.Element[]}> = ({id, image, title, url, onClick, tags, children}) => {
   return (
-    <div className='portfolio-box' id={id} onClick={() => onClick(id)}>
-      <div className="image" style={{backgroundImage: `url("${image}")`}} />
+    <div className='portfolio-box' id={id}>
+      <div className="image" style={{backgroundImage: `url("${image}")`}} onClick={() => onClick(id)} />
       <div className="wrapper">
 
         <div className='description-div'>
           <div>
             <div className="title-div">
-              <h5>{title}</h5>
-              <i className="fas fa-external-link-alt ps-2"></i>
+              <div className="d-flex flex-column justify-content-center">
+                <h5>
+                  <span onClick={() => onClick(id)}>{title}</span>
+                  <a href={url} target="_blank" rel="noreferrer">
+                    <i className="fas fa-external-link-alt ps-2"></i>
+                  </a>
+                </h5>
+                <a href={url} target="_blank" rel="noreferrer">
+                  <sup style={{fontSize: "10px"}}>
+                    {url}
+                  </sup>
+                </a>
+              </div>
             </div>
-            <div className="description">
+            <div className="description" onClick={() => onClick(id)}>
               {children}
             </div>
           </div>
@@ -178,36 +189,38 @@ const Modal: React.FC<{portfolioId:string, setPortfolio:Function}> = ({portfolio
 
   return (
     <div className="modal">
-      <div className="column">
-        <div className="row">
-          <div className="icon">
-            <i className="fas fa-arrow-left" onClick={previousImage}></i>
-          </div>
-          <div className="image-wrapper">
-            <header>
-              <h1>{title}</h1>
-              <i className="fas fa-times" onClick={() => {
-                setImageCounter(0)
-                setPortfolio("")
-              }}></i>
-            </header>
-            <div className="image-list">
-              {images[imageCounter] && (
-                <div className="image" style={{backgroundImage: `url("${images[imageCounter]}")`}} />
-              )}
+      <div className="modal-dialog modal-lg">
+        <div className="column">
+          <div className="row">
+            <div className="icon">
+              <i className="fas fa-arrow-left" onClick={previousImage}></i>
+            </div>
+            <div className="image-wrapper">
+              <header>
+                <h1>{title}</h1>
+                <i className="fas fa-times" onClick={() => {
+                  setImageCounter(0)
+                  setPortfolio("")
+                }}></i>
+              </header>
+              <div className="image-list">
+                {images[imageCounter] && (
+                  <div className="image" style={{backgroundImage: `url("${images[imageCounter]}")`}} />
+                )}
+              </div>
+            </div>
+            <div className="icon">
+              <i className="fas fa-arrow-right" onClick={nextImage}></i>
             </div>
           </div>
-          <div className="icon">
-            <i className="fas fa-arrow-right" onClick={nextImage}></i>
+          <div className="points">
+            {images.map((image, index) => (
+              <i key={`${image}-${index}`} className={`fas fa-circle ${index == imageCounter ? "active" : ""}`}></i>
+            ))}
           </div>
-        </div>
-        <div className="points">
-          {images.map((image, index) => (
-            <i key={`${image}-${index}`} className={`fas fa-circle ${index == imageCounter ? "active" : ""}`}></i>
-          ))}
-        </div>
-        <div className="description">
-          {description}
+          <div className="description">
+            {description}
+          </div>
         </div>
       </div>
     </div>
@@ -239,13 +252,25 @@ const Portfolio: React.FC = () => {
         <h1> meus<span className="green-text">trabalhos</span> <figure className="white-square" /></h1>
       </div>
       <div id="portfolio-wrapper">
+        <p>
+          Ao longo da minha trajetória, desenvolvi <span className="green-text">ERPs, CMR, E-Commerce, APIs, Integrações com apps de terceiros, Chats, Helpdesk</span> e <span className="green-text">Dashboards</span> que otimizaram processos, melhoraram o desempenho de sistemas e facilitaram a gestão interna de diversas empresas.
+        </p>
+
+        <p>
+          Atuando como desenvolvedor fullstack, fui <span className="green-text">responsável por toda a construção das aplicações</span>, desde a implementação do <span className="green-text">design</span> até o desenvolvimento de <span className="green-text">funcionalidades robustas</span>, garantindo integração eficiente entre backend e frontend.
+        </p>
+
+        <p>
+          Meu foco sempre foi criar soluções que não apenas atendam às necessidades dos clientes, mas que tragam <span className="green-text">melhorias reais</span>, como automação de tarefas, otimização de recursos e sistemas mais ágeis e escaláveis. Cada projeto que desenvolvo visa <span className="green-text">simplificar a gestão</span> e impulsionar a <span className="green-text">eficiência operacional</span>.
+        </p>
         <div className="row">
           {/* Skin Medicinals */}
-          <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
             <PortfolioBox
               id="skinmedicinals"
               image="/assets/img/skinmedicinals/1.png"
               title="Skin Medicinals"
+              url="https://www.skinmedicinals.com/"
               tags={["Laravel", "ReactJS", "MySQL"]}
               onClick={(id:string) => setPortfolio(id)}
             >
@@ -256,11 +281,12 @@ const Portfolio: React.FC = () => {
             </PortfolioBox>
           </div>
           {/* StoneAlgo */}
-          <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
             <PortfolioBox 
               id="stonealgo"
               image="/assets/img/stonealgo/1.png"
               title="StoneAlgo"
+              url="https://www.stonealgo.com/"
               tags={["Django", "Twig", "MySQL"]}
               onClick={(id:string) => setPortfolio(id)}
             >
@@ -271,11 +297,12 @@ const Portfolio: React.FC = () => {
             </PortfolioBox>
           </div>
           {/* LZ Facilities */}
-          <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
             <PortfolioBox 
               id="lzfacilities"
               image="/assets/img/lz_prints/1.png"
               title="LZ Facilities"
+              url="http://lzfacilities.limpezacomzelo.com.br/"
               tags={["PHP", "ReactJS", "MySQL"]}
               onClick={(id:string) => setPortfolio(id)}
             >
@@ -286,11 +313,12 @@ const Portfolio: React.FC = () => {
             </PortfolioBox>
           </div>
           {/* AFAR Produtora */}
-          <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
             <PortfolioBox 
               id="afarprodutora"
               image="/assets/img/afarprodutora_prints/face.jpg"
               title="AFAR Produtora"
+              url="https://www.afarprodutora.com.br/"
               tags={["Laravel", "MySQL"]}
               onClick={(id:string) => setPortfolio(id)}
             >

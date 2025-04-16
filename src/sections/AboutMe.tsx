@@ -13,15 +13,10 @@ const AboutMe: React.FC = () => {
                 <h1> sobre<span className="green-text">mim</span> <figure className="white-square" /></h1>
                 <div>
                   <p>
-                    Olá! Sou Luan, <span className="green-text">Desenvolvedor Web Fullstack junior</span>. 
-                    Eu tenho +4 anos de experiência com programação e sou <span className="green-text"> qualificado </span>
-                    para desenvolver aplicações web em diversas linguagens de programação e frameworks.
+                    Sou um desenvolvedor fullstack <span className="green-text">apaixonado por tecnologia</span> e pela criação de soluções eficientes e escaláveis. Há mais de <span className="green-text">6 anos</span>, atuo no desenvolvimento web, combinando <span className="green-text">criatividade</span> e <span className="green-text">expertise</span> técnica para transformar ideias em soluções digitais de <span className="green-text">alta qualidade</span>.
                   </p>
                   <p>
-                    Eu escrevo um <span className="green-text">código limpo</span>, tendendo
-                    usar orientação a objeto, soluções simples e eficientes e a seguir o codebase do projeto.
-                    Isso melhor a <span className="green-text">leitura</span> e reuso do meu código, o que torna uma 
-                    vantagem para a manutenção do projeto quando se trabalha com um time de desenvolvedores.
+                    Minha especialização inclui as frameworks <span className="green-text">Laravel, Spring Boot, Django e ReactJS</span>, além de um domínio sólido em <span className="green-text">PHP, Java, Python, Javascript, Rust, MySQL, PostgreSQL, NodeJS, Redux, HTML, CSS e Sass</span>. 
                   </p>
                 </div>
               </div>

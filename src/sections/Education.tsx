@@ -107,6 +107,22 @@ const Education: React.FC = () => {
               </React.Fragment>
             )}
           />
+
+          <Box
+            title="Pacaembu autopeças"
+            year="2023 - Atualmente"
+            description={(
+              <React.Fragment>
+                <p>
+                  A <span className="green-text">Pacaembu Autopeças</span> é uma empresa pioneira no setor de autopeças pesadas, e tive o privilégio de contribuir para sua transformação digital. Como desenvolvedor, meu papel foi <span className="green-text">modernizar e automatizar</span> processos que antes estavam restritos a planilhas, criando um sistema web que permitisse <span className="green-text">interação fluida</span> entre a empresa com <span className="green-text">clientes e fornecedores</span>.
+                </p>
+
+                <p>
+                  Além disso, <span className="green-text">inovei a comunicação interna</span> da empresa, substituindo o uso de e-mails por um sistema de chamados, o que permitiu uma resolução mais <span className="green-text">ágil</span> e <span className="green-text">eficiente</span> dos problemas entre os diferentes setores.
+                </p>
+              </React.Fragment>
+            )}
+          />
         </div>
 
         <div className="col-12 col-sm-6">

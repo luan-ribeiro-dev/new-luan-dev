@@ -24,21 +24,21 @@ const Home: React.FC = () => {
                   <div id="personal-info-div">
                     <div className="info">
                       <span className="bold-text">Idade:&nbsp;</span>
-                      <span className="info-text">22</span>
+                      <span className="info-text">25</span>
                     </div>
                     <div className="info">
                       <span className="bold-text">Email:&nbsp;</span>
-                      <a href="mailto:contact@luan-dev.com">
-                        <span className="info-text">contact@luan-dev.com</span>
+                      <a href="mailto:contact@luanribeiro.dev">
+                        <span className="info-text">contact@luanribeiro.dev</span>
                       </a>
                     </div>
                     <div className="info">
                       <span className="bold-text">Localização:&nbsp;</span>
-                      <span className="info-text">Brasil - São Paulo - São Miguel Paulista</span>
+                      <span className="info-text">Brasil - São Paulo - Guaianazes</span>
                     </div>
                     <div className="info">
                       <span className="bold-text">Experiência:&nbsp;</span>
-                      <span className="info-text">Desenvolvedor Web Fullstack Junior, +4 Anos</span>
+                      <span className="info-text">Desenvolvedor Web Fullstack Pleno, +6 Anos</span>
                     </div>
                     <div className="info">
                       <span className="bold-text">Github:&nbsp;</span>
@@ -64,7 +64,7 @@ const Home: React.FC = () => {
               </SectionDescription>
             </div>
 
-            <span className="mt-3" id="luan-rights-reserved">Luan Dev - All Rights Reserved</span>
+            <span className="mt-3" id="luan-rights-reserved">Luan Ribeiro - All Rights Reserved</span>
           </div>
         </div>
         <div className="col-12 col-sm-6 section-side-div position-relative flex-fill" id="self-div">
